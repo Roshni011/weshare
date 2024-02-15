@@ -1,0 +1,32 @@
+img{
+    width: 300px;
+    
+
+}
+
+#profile-container{
+    width: 700px;
+    margin: auto;
+}
+
+input{
+    width: 300px;
+    height: 50px;
+}
+ 
+ 
+input::-webkit-input-placeholder {
+    font-size: 35px;
+    
+}
+input[type] {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    font-size: 35px;
+    font-weight: 500;
+}

@@ -1,0 +1,31 @@
+header {
+  background-color: steelblue;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  padding: 0px 10px;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header #active-status {
+  display: flex;
+  justify-content: space-between;
+}
+
+header li {
+  display: inline;
+  list-style: none;
+  margin-left: none;
+  font-size: 20px;
+}
+
+header a {
+  color: inherit;
+}

@@ -1,0 +1,25 @@
+footer {
+  height: 70px;
+  background-color: steelblue;
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  padding: 0px 10px;
+  align-items: center;
+  display: flex;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+footer #footer-links {
+  margin-left: 20px;
+  display: flex;
+  width: 100px;
+  flex-wrap: wrap;
+}

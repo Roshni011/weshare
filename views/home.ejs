@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="/css/home.css">
+<div  id="home-content">
+    <h1>
+         <!-- <%= title %> -->
+         WeShare | Home
+    </h1>
+</div>
+
+<div id="home-container">
+    <section id="feed-posts">
+        <h2>Posts</h2>
+        <% if(locals.user){%>
+        <form style="line-height: 20px;" action="/posts/create" id="new-post-form" method="POST">
+            <textarea name="content" id="" cols="40" rows="12" placeholder="Write here"></textarea>
+            <input type="submit" value="Post">
+        <%}%>    
+    
+        </form> 
+        <div id="posts-list-container">
+            <ul>
+                <% for(post of posts){%>
+                    <%- include('_post') -%>
+                <%}%>     
+            </ul>
+    
+        </div>
+    
+    </section> 
+    
+    <section id="user-friends">
+        <h2>Peoples</h2>
+        <% for(u of all_users){ %>
+            <p>
+                <a href="/users/profile/<%= u.id%>"><%= u.name %></a>
+            </p>
+        <%}%>    
+    
+    </section>
+
+
+</div>
+
+<script src="/js/home_posts.js"></script>
+        

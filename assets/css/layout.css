@@ -1,0 +1,10 @@
+body {
+  background-color: #b1b191;
+}
+
+body #layout-main {
+  height: auto;
+  min-height: 480px;
+  background-color: bisque;
+  border: 2px dashed grey;
+}

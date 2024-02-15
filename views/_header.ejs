@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/header.css">
+<header>
+   <a href="/" style="font-size: larger;"><h1>WeShare</h1></a> 
+
+
+
+    <ul id="active-status">
+        <%if(locals.user){%>
+           <li><h1><a><%= user.name%></a></h1></li>
+            <li>
+               <h1><a href="/users/sign-out">Sign-Out</a></h1> 
+            </li>
+        <%}else{%>
+            <li>
+                <a href="/users/sign-in">Sign-In</a>
+            </li>
+            <li>
+                <a href="/users/sign-up">Sign-Up</a>
+            </li>
+        <%}%>   
+    </ul>
+</header>
